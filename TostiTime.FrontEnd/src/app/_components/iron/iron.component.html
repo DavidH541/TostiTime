@@ -1,0 +1,11 @@
+<div class="iron">
+    <h3>{{iron?.name}} tostizetapparaat</h3>
+    <div class="slots-container">
+        <div class="Row">
+            <app-slot *ngFor="let slot of topRow" [officeId]="officeId" [slot]="slot"></app-slot>
+        </div>
+        <div class="Row">
+            <app-slot *ngFor="let slot of bottomRow" [officeId]="officeId" [slot]="slot"></app-slot>
+        </div>
+    </div>
+</div>

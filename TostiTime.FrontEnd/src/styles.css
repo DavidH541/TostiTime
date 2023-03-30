@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+
+body{
+    background-color:#f9edcc;
+    cursor: url('favicon.ico'), default;
+
+}
+
+p{
+    text-align: center;
+    margin-bottom: 0;
+}

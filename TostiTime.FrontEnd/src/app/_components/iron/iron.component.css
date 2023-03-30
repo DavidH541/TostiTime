@@ -1,0 +1,30 @@
+.iron{
+    margin: 10px;
+    padding: 10px;
+}
+
+.slots-container{   
+    background-color:#f9df74;
+    height: 2fr;
+}
+
+.Row{
+    display: flex;
+    flex-direction: row;
+}
+
+app-slot{
+    border: 1px solid black;
+    background-color: white;
+    flex: 1 0;
+    display: flex;
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.block{
+    display: block;
+}

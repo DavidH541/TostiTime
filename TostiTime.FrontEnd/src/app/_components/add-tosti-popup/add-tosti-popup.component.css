@@ -1,0 +1,23 @@
+.modal-body{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+pre{
+    margin-bottom: 0px;
+}
+
+button {
+    margin: 2px;
+}
+
+.reservation-details{
+    display: flex;
+    flex-direction: column;
+}
+
+.person-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}

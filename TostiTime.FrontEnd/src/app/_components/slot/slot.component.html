@@ -1,0 +1,10 @@
+<div *ngIf="isOccupied else elseBlock" [ngClass]="tostiCookedState"  (click)='completeReservation()'>
+    <p>Slot {{slot?.id}}</p>
+    <app-last-reservation (cookedState)="setTostiCookedState($event)" [lastReservation]="slot?.lastReservation"></app-last-reservation>
+</div>
+<ng-template #elseBlock>
+    <div (click)='openAddTostiComponent()'>
+        <p>Slot {{slot?.id}}</p>
+        <app-last-reservation [lastReservation]="slot?.lastReservation"></app-last-reservation>
+    </div>
+</ng-template>

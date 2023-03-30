@@ -1,0 +1,7 @@
+{
+    "/api/*": {
+        "target": "https://tostitimeapi.azurewebsites.net",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}

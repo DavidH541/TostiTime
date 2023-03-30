@@ -1,0 +1,27 @@
+.office {
+    background-color: #f9edcc;
+}
+
+.ironList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.appiron{
+    flex: 1 0 fit-content;
+}
+
+select{
+    background-color: #f9edcc;
+    border: 0px;
+    font-size: xxx-large;
+    font-weight: 500;
+    display: block;
+    margin: auto;
+
+}
+
+option{
+    font-weight: 500;
+}

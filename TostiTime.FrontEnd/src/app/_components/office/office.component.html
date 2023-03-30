@@ -1,0 +1,15 @@
+<nav>
+    <a [routerLink]="['office', selectedOffice]"></a>
+</nav>
+<div class="office">
+    <select (change)="navigateToOffice($event)" [(ngModel)]="selectedOffice">
+        <option *ngFor="let office of offices" [value]="office.city">
+          {{office.city}}
+        </option>    
+    </select>
+    <div class="ironList">
+        <div *ngFor="let iron of office?.irons" class="appiron">
+            <app-iron [officeId]="office?.id" [iron]="iron"></app-iron>
+        </div>
+    </div>
+</div>

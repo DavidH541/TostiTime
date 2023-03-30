@@ -1,0 +1,6 @@
+<div *ngIf="isOccupied else elseBlock">
+    <p class="nooitmeerwrappls🙏">{{reservator?.firstName}} {{minutesSince| number:'2.0'}}:{{secondsSince | number:'2.0'}}</p>
+</div>
+<ng-template #elseBlock>
+    <p>Available</p>
+</ng-template>

@@ -1,0 +1,52 @@
+div , .zero .one, .two, .three, .four, .five .six .seven .eight .nine{
+    background-color:#CDE990;
+    width: 100%;
+    display: flex;
+    flex: 1 0 fit-content;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.zero {
+    background-color: #edc4b3;
+}
+
+.one {
+    background-color: #e6b8a2;
+}
+
+.two {
+    background-color: #deab90;
+}
+
+.three {
+    background-color: #d69f7e;
+}
+
+.four {
+    background-color: #cd9777;
+}
+
+.five {
+    background-color: #c38e70;
+}
+
+.six {
+    background-color: #b07d62;
+}
+
+.seven {
+    background-color: #9d6b53;
+}
+
+.eight {
+    background-color: #8a5a44;
+}
+
+.nine {
+    background-color: #774936;
+}
+
+.burned {
+    background-color: red;
+}

@@ -1,0 +1,16 @@
+<div class="modal-header">
+    <h4 class="modal-title">Reservating</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss('Cross click')"></button>
+</div>
+<div class="modal-body">
+    <div class="reservation-details">
+        <pre>Slot {{slotId}}         
+In {{officeName}}    </pre>
+        <input type="text" name="firstName" placeholder="Insert new person" #firstName (input)="filterPersons(firstName.value)">
+        <button class="btn btn-outline-dark" type="button" (click)="reserveSlot(firstName.value)">Submit</button>
+    </div>
+    <div class="person-list">
+        <button *ngFor="let person of filteredPersons | orderBy: 'firstName'" type="button" class="btn btn-outline-dark"
+            (click)="reserveSlot(person.firstName)">{{person.firstName}}</button>
+    </div>
+</div>
